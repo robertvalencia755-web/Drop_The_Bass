@@ -13,6 +13,7 @@ function EightMovement(right, upRight, up, upLeft, left, downLeft, down, downRig
 		y += ySpeed;
 		
 		//Sprite switching anims
+		image_speed = 1;
 		switch(dir) {
 				case 0: sprite_index = right; break;
 				case 45: sprite_index = upRight; break;
@@ -23,5 +24,7 @@ function EightMovement(right, upRight, up, upLeft, left, downLeft, down, downRig
 				case 270: sprite_index = down; break;
 				case 315: sprite_index = downRight; break;
 		}
+	} else{
+		image_speed = 0;
 	}
 }
