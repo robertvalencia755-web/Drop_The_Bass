@@ -48,6 +48,8 @@
     {"id":{"name":"spr_playerUp","path":"sprites/spr_playerUp/spr_playerUp.yy",},},
     {"id":{"name":"spr_playerUpLeft","path":"sprites/spr_playerUpLeft/spr_playerUpLeft.yy",},},
     {"id":{"name":"spr_playerUpRight","path":"sprites/spr_playerUpRight/spr_playerUpRight.yy",},},
+    {"id":{"name":"spr_testTileSet","path":"sprites/spr_testTileSet/spr_testTileSet.yy",},},
+    {"id":{"name":"tile_testTileset","path":"tilesets/tile_testTileset/tile_testTileset.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
