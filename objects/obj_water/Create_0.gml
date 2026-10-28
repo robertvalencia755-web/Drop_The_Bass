@@ -1,0 +1,1 @@
+//this is for the bobber object to detect when to fish
