@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fishing_logic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fishing_logic",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

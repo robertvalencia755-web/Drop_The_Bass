@@ -28,8 +28,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"spr_border",
+    "path":"sprites/spr_border/spr_border.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

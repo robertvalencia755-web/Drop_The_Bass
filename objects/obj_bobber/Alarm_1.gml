@@ -1,0 +1,1 @@
+speed -= calcThrowSlow(lossSpeedStep);

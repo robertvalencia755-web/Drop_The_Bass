@@ -4,10 +4,6 @@ function changeStatus(status){
 	playerState = status;
 }
 
-function changeStatus(status, fish){
-	playerState = status;
-	currentFish = fish;
-}
 
 
 //Movement variables

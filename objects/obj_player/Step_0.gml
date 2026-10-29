@@ -8,6 +8,7 @@
 		spr_playerDownRight);
 		
 		//check for fishing key
+		checkFishing(ord("F"));
 	} else if (playerState == State.Fishing){
 		//Do the fishing stuff
 	}

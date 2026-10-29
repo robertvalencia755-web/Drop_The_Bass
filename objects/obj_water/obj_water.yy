@@ -28,8 +28,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"spr_water",
+    "path":"sprites/spr_water/spr_water.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
