@@ -49,6 +49,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"fish_data","path":"scripts/fish_data/fish_data.yy",},},
     {"id":{"name":"fishing_logic","path":"scripts/fishing_logic/fishing_logic.yy",},},
     {"id":{"name":"scr_movement","path":"scripts/scr_movement/scr_movement.yy",},},
     {"id":{"name":"stringWrap","path":"scripts/stringWrap/stringWrap.yy",},},

@@ -1,7 +1,8 @@
 enum State {Explore, Fishing}
 
-function changeStatus(status){
-	playerState = status;
+function caughtFish(fish){
+	currentFish = fish;
+	playerState = State.Fishing;
 }
 
 
