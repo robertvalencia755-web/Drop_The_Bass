@@ -27,8 +27,10 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"Fish_Types","filters":[],"listItems":[
-        "Global.",
+        "global.fish1",
+        "global.fish2",
       ],"multiselect":true,"name":"Fish_Types","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Item 0\"","varType":6,},
+    {"$GMObjectProperty":"v2","%Name":"Priority","filters":[],"listItems":[],"multiselect":false,"name":"Priority","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"fish_data",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Game Data",
+    "path":"folders/Scripts/Game Data.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

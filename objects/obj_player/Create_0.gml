@@ -21,3 +21,4 @@ rodOffsetY = 0;
 //State variables
 playerState = State.Explore;
 currentFish = noone;
+currentRod = noone;
