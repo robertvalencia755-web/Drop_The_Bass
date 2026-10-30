@@ -1,22 +1,18 @@
 //Do bobbing animation
-var bob;
-
-if (alarm[2] == 0){
-	if (bob){
-		y -= 2;
-		bob = !bob;
-		alarm[2] = 1;
-	} else {
-		y += 2;
-		bob = !bob;
-		alarm[2] = 1;
+//var bob;
+if (landed){
+	if (alarm[0] == -1){
+		if (bob){
+			y -= 3;
+			bob = !bob;
+			alarm[0] = 60;
+		} else {
+			y += 3;
+			bob = !bob;
+			alarm[0] = 60;
+		}
 	}
 }
 		
 
 
-//Activate random fishing chance alarm
-if (alarm[0] == 0){
-	//Time 
-	alarm[0] = 5;
-}

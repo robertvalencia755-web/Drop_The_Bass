@@ -6,6 +6,8 @@ function checkFishing(key){
 		} else {
 			var bobber = instance_create_layer(x, y, "Instances", obj_bobber)
 			bobber.direction = direction;
+			//possible implementation of upgradable rods changing throw speed?
+			//bobber.baseSpeed = currRod.baseSpeed;
 		}
 		
 	}
