@@ -10,6 +10,7 @@ function changeStatus(status){
 xSpeed = 0;
 ySpeed = 0;
 moveSpeed = 3;
+direction = 270;
 
 
 //State variables

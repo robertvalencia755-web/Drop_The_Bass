@@ -1,8 +1,8 @@
 // create fishing line object
-baseSpeed = 15
+baseSpeed = 7.5;
 speed = baseSpeed;
 
 direction = obj_player.direction;
 lossSpeedStep = 10;
-Landed = false;
+landed = false;
 objOn = noone;

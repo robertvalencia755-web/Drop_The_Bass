@@ -5,16 +5,16 @@ function EightMovementControls(right, left, up, down){
 
 function EightMovement(right, upRight, up, upLeft, left, downLeft, down, downRight) {
 	if (hInput != 0 or vInput != 0) {
-		dir = point_direction(0, 0, hInput, vInput);
-		xSpeed = lengthdir_x(moveSpeed, dir);
-		ySpeed = lengthdir_y(moveSpeed, dir);
+		direction = point_direction(0, 0, hInput, vInput);
+		xSpeed = lengthdir_x(moveSpeed, direction);
+		ySpeed = lengthdir_y(moveSpeed, direction);
 		
 		x += xSpeed;
 		y += ySpeed;
 		
 		//Sprite switching anims
 		image_speed = 1;
-		switch(dir) {
+		switch(direction) {
 				case 0: sprite_index = right; break;
 				case 45: sprite_index = upRight; break;
 				case 90: sprite_index = up; break;
