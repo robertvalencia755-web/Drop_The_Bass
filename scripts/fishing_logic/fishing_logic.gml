@@ -3,12 +3,12 @@ function checkFishing(key){
 		
 		if (instance_exists(obj_bobber)){
 			instance_destroy(obj_bobber);
+			changeState(State.Explore);
 		} else {
 			var bobber = instance_create_layer(x, y, "Instances", obj_bobber)
 			bobber.direction = direction;
-			//bobber.catchChance *= currentRod.catchMultiplier; //Lower the catch chance 
-			//possible implementation of upgradable rods changing throw speed?
-			//bobber.baseSpeed = currRod.baseSpeed;
+			bobber.catchChance *= equipment.currentBait.catchMultiplier; //Lower the catch chance 
+			changeState(State.Fishing);
 		}
 		
 	}
