@@ -13,6 +13,8 @@ if (landed){
 		}
 	}
 }
-		
+
+//Grab the obj water with highest priority
+objOn = other;
 
 
