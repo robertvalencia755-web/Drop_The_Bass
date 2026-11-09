@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"newTextBox",
+  "%Name":"stringWrap",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"newTextBox",
+  "name":"stringWrap",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

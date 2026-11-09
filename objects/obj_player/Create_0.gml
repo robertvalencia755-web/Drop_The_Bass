@@ -1,4 +1,4 @@
-enum State {Explore, Fishing, Rythm, Locked}
+enum State {Explore, Fishing, Rythm}
 
 function caughtFish(fish){
 	currentFish = fish;
@@ -34,7 +34,6 @@ rodOffsetY = 0;
 //State variables
 playerState = State.Explore;
 currentFish = undefined;
-lastState = playerState;
 
 //Equipment
 equipment = {

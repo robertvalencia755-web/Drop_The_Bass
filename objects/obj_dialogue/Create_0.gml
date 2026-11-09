@@ -1,16 +1,13 @@
-//640 = resolution width
-//360 = resolution height
-//These are for the dialogue box and is just to make it stretch all nice
-x1 = 640/2
-x2 = 640/2
-y1 = 360-100
-y2 = 340
+text[0] = "Hello World"
+text[1] = "This is a really really really long string to test text wrapping, hell yeah"
 
-x1Target = 20
-x2Target = 620
+textCurrent = 0
+textLast = 1
+textWidth = 300
+textX = 32
+textY = 32
 
-lerpProgress = 0
-textProgress = 0
+charCurrent = 1
+charSpeed = 0.25
 
-textSpeed = 0.25
-
+text[textCurrent] = stringWrap(text[textCurrent],textWidth)
