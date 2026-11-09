@@ -1,6 +1,5 @@
 //640 = resolution width
 //360 = resolution height
-//These are for the dialogue box and is just to make it stretch all nice
 x1 = 640/2
 x2 = 640/2
 y1 = 360-100
