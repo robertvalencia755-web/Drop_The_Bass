@@ -14,7 +14,9 @@ function addInventory(fish, num){
 
 function removeInventory(fish, num){
 	inventory.fish -= num;
+	return inventory.fish;
 }
+
 
 
 

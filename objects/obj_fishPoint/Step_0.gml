@@ -1,0 +1,1 @@
+move_towards_point(center_x, center_y, 4); //Get speed from obj_Point_Manager.speed

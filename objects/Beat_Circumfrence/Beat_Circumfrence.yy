@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Puddle",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Beat_Circumfrence",
+  "eventList":[],
   "managed":true,
-  "name":"Puddle",
+  "name":"Beat_Circumfrence",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rhythm Game Objects",
-    "path":"folders/Objects/Rhythm Game Objects.yy",
+    "name":"Tracking",
+    "path":"folders/Objects/Rhythm Game Objects/Tracking.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Beat_Edge",
+    "path":"sprites/Beat_Edge/Beat_Edge.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
