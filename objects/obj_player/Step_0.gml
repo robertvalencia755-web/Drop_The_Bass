@@ -26,3 +26,6 @@ if (playerState == State.Explore){
 } else if (playerState == State.Rythm){
 	
 }
+else if(playerState == State.Locked){
+	//do nothing
+}
