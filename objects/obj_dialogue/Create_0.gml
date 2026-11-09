@@ -14,3 +14,4 @@ textProgress = 0
 
 textSpeed = 0.25
 
+responseSelected = 0;
