@@ -16,13 +16,13 @@ function EightMovement(right, upRight, up, upLeft, left, downLeft, down, downRig
 		image_speed = 1;
 		switch(direction) {
 				case 0: sprite_index = right; break;
-				case 45: sprite_index = upRight; break;
+				//case 45: sprite_index = upRight; break;
 				case 90: sprite_index = up; break;
-				case 135: sprite_index = upLeft break;
+				//case 135: sprite_index = upLeft break;
 				case 180: sprite_index = left; break;
-				case 225: sprite_index = downLeft; break;
+				//case 225: sprite_index = downLeft; break;
 				case 270: sprite_index = down; break;
-				case 315: sprite_index = downRight; break;
+				//case 315: sprite_index = downRight; break;
 		}
 	} else{
 		image_speed = 0;
