@@ -1,3 +1,4 @@
+
 goal = 100 //Get goal from Bus
 points = 0
 multiplier = 1; //Get multiplier from Bus
@@ -15,4 +16,13 @@ function addPoints(){
 
 function subPoints(){
 	points -= 10 * multiplier;
+}
+
+function spawnNote(_x, _y){
+	instance_create_layer(_x, _y, "Notes", obj_note);
+}
+
+function calcSpawn(){
+	
+	return [_x, _y];
 }
