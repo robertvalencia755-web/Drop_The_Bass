@@ -3,7 +3,7 @@ function EightMovementControls(right, left, up, down){
 	vInput = keyboard_check(down) - keyboard_check(up);
 }
 
-function EightMovement(right, upRight, up, upLeft, left, downLeft, down, downRight) {
+function EightMovement(right, up, left, down) {
 	if (hInput != 0 or vInput != 0) {
 		direction = point_direction(0, 0, hInput, vInput);
 		xSpeed = lengthdir_x(moveSpeed, direction);
