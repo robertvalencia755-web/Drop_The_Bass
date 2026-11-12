@@ -14,3 +14,5 @@ Option 2:
 */
 center_x = room_width / 2;
 center_y = room_height / 2;
+direction = point_direction(x, y, center_x, center_y);
+speed = obj_Point_Manager.noteSpeed;
