@@ -1,4 +1,4 @@
-if (playerState == State.Explore){
+if (playerState == PlayerState.Explore){
 	currentFish = undefined;
 		
 		
@@ -9,7 +9,7 @@ if (playerState == State.Explore){
 	//check for fishing key
 	checkFishing(ord("F"));
 	
-} else if (playerState == State.Fishing){
+} else if (playerState == PlayerState.Fishing){
 	//check for fishing key
 	checkFishing(ord("F"));
 	
@@ -21,9 +21,8 @@ if (playerState == State.Explore){
 	} else {
 		
 	}
-} else if (playerState == State.Rythm){
+} else if (playerState == PlayerState.Rythm){
 	
-}
-else if(playerState == State.Locked){
-	//do nothing
+} else if (playerState == PlayerState.Locked){
+	
 }

@@ -35,6 +35,9 @@
     "name":"spr_playerDown",
     "path":"sprites/spr_playerDown/spr_playerDown.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_playerDown",
+    "path":"sprites/spr_playerDown/spr_playerDown.yy",
+  },
   "visible":true,
 }
