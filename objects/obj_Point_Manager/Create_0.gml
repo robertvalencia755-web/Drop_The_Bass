@@ -1,4 +1,4 @@
-enum State { PreStart, Playing, Delay, Fading, Completed };
+enum RhythmState { PreStart, Playing, Delay, Fading, Completed };
 points = 0;
 beatmapIndex = 0;
 goal = pointer_null;
@@ -12,7 +12,7 @@ downloadFromBus();
 //The amount of time in seconds from the spawning circle to the player paddle, this provides travel compensation to keep things on beat
 // [(Diameter1 - Diameter2) / (2 * speed)] / game_fps
 travelTime = ((Spawn_Circumfrence.sprite_width - Beat_Circumfrence.sprite_width) / (2 * noteSpeed)) / game_get_speed(gamespeed_fps);
-songState = State.PreStart;
+songState = RhythmState.PreStart;
 songInstance = -1;
 songTime = -travelTime;
 
@@ -54,7 +54,7 @@ function updateSpawning(){
 
 //finished game functions
 function finishGame(_success){
-	songState = State.Delay;
+	songState = RhythmState.Delay;
 	audio_stop_sound(songInstance);
 	with (obj_note) instance_destroy();
 	uploadToBus(_success);

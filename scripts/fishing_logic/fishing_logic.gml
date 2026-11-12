@@ -3,12 +3,12 @@ function checkFishing(key){
 		
 		if (instance_exists(obj_bobber)){
 			instance_destroy(obj_bobber);
-			changeState(State.Explore);
+			changeState(PlayerState.Explore);
 		} else {
 			var bobber = instance_create_layer(x, y, "Instances", obj_bobber)
 			bobber.direction = direction;
 			bobber.catchChance *= equipment.currentBait.catchMultiplier; //Lower the catch chance 
-			changeState(State.Fishing);
+			changeState(PlayerState.Fishing);
 		}
 		
 	}

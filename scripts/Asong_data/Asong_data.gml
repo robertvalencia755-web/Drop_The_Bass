@@ -1,4 +1,4 @@
-global.test = {
+global.testSong = {
 	songName: "Test Song",
 	songRef: Sound1,
 	duration: 57.78,

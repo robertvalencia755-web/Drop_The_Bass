@@ -29,9 +29,9 @@ function newTextBox(){
 	
 	
 	with(obj_player){
-		if(obj_player.playerState != State.Locked){
+		if(obj_player.playerState != PlayerState.Locked){
 			lastState = playerState
-			changeState(State.Locked)
+			changeState(PlayerState.Locked)
 		}
 	}
 }

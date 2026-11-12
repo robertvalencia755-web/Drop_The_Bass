@@ -1,11 +1,11 @@
 var _dt = delta_time / 1000000;
 
 switch (songState) {
-    case State.PreStart:
+    case RhythmState.PreStart:
         // 1. Pre-roll countdown
         songTime += _dt;
         if (songTime >= 0) {
-            songState = State.Playing;
+            songState = RhythmState.Playing;
             songInstance = audio_play_sound(song.songRef, 1, false);
         }
         
@@ -13,7 +13,7 @@ switch (songState) {
         updateSpawning();
         break;
 
-    case State.Playing:
+    case RhythmState.Playing:
         // 2. Track position sync
         if (audio_is_playing(songInstance)) {
             var _trackPos = audio_sound_get_track_position(songInstance);
@@ -34,25 +34,25 @@ switch (songState) {
         }
         break;
 
-    case State.Delay:
+    case RhythmState.Delay:
         // 3. Post-game delay (e.g. 3-second pause to see score)
         delayTimer -= _dt;
         if (delayTimer <= 0) {
-            songState = State.Fading;
+            songState = RhythmState.Fading;
         }
         break;
 
-    case State.Fading:
+    case RhythmState.Fading:
         // 4. Fade to black then transition
         fadeAlpha += _dt / fadeDuration;
         if (fadeAlpha >= 1.0) {
             fadeAlpha = 1.0;
-            songState = State.Completed;
+            songState = RhythmState.Completed;
             room_goto(Main_World);
         }
         break;
 
-    case State.Completed:
+    case RhythmState.Completed:
         // Room transition in progress
         break;
 }

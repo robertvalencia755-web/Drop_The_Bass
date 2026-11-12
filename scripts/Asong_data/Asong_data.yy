@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"song_data",
+  "%Name":"Asong_data",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"song_data",
+  "name":"Asong_data",
   "parent":{
     "name":"Game Data",
     "path":"folders/Scripts/Game Data.yy",

@@ -3,7 +3,7 @@
 global.testFish = {
 	name: "Test Songs",
 	
-	songs: [ global.test ],
+	songs: [ global.testSong ],
 	
 	difficulty: Difficulty.Hard
 }
