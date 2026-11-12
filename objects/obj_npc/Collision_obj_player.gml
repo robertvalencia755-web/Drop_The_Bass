@@ -1,14 +1,12 @@
+//probably a way too complicated way to do this but
 if(keyboard_check_pressed(ord("E"))){
-	var inst = instance_create_layer(x,y, "Instances", obj_dialogue)
-	with(inst){
-		text[0] = "Hey! welcome to fish world"
-		text[1] = "You don't talk much do ya?"
-		text[2] = "Why don't you go catch me some guppys so I can tell you more about fish world"
-		text[3] = "Press F to fish"
-		textLast = 3
-		textWidth = 500
-		textX = 100
-		textY = 800
-		text[textCurrent] = stringWrap(text[textCurrent],textWidth)
+	with(obj_player){
+		//checks if player isnt locked so you cant keep pressing e to make new text boxes
+		if(playerState != State.Locked){
+			//then goes through the text array and calls the newTextBox funtion which puts all the texts in a queue
+			with(other){
+				newTextBox(text,textResponses)
+			}
+		}
 	}
 }
