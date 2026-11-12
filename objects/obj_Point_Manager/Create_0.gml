@@ -7,7 +7,8 @@ song = pointer_null;
 beatMap = pointer_null;
 noteSpeed = pointer_null;
 
-downloadFromBus();
+//downloadFromBus();
+setTestInfo();
 
 //The amount of time in seconds from the spawning circle to the player paddle, this provides travel compensation to keep things on beat
 // [(Diameter1 - Diameter2) / (2 * speed)] / game_fps
@@ -41,6 +42,14 @@ function uploadToBus(success){
 	with(obj_Data_Bus){
 		self.success = success;
 	}
+}
+
+function setTestInfo(){
+	goal = 100;
+	multiplier = 1.0;
+	song = global.testSong;
+	beatMap = song.maps[Difficulty.Easy]
+	noteSpeed = song.noteSpeed[Difficulty.Easy]
 }
 
 //spawn the necessary notes
