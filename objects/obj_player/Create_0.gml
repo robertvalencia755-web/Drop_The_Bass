@@ -19,7 +19,6 @@ function removeInventory(fish, num){
 
 
 
-
 //Movement variables
 xSpeed = 0;
 ySpeed = 0;

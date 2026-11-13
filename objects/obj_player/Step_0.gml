@@ -17,6 +17,9 @@ if (playerState == PlayerState.Explore){
 	if (currentFish != undefined){
 		//display the catching fish sprite + the fish on the screen
 		//Allow player to choose to catch it or release, ie switch playerState to Explore or Rythm
+		playerState = PlayerState.Rythm;
+		//Activate the transition animation
+		
 		
 	} else {
 		

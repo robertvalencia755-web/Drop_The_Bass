@@ -18,3 +18,15 @@ function reset(){
 
 	success = pointer_null;
 }
+
+function playerUploadToBus(song, mapDiff, multiplier, goal){
+	self.song = song;
+	self.mapDiff = mapDiff
+	self.goal = goal;
+	self.multiplier = multiplier;
+	
+}
+
+function rhythmUploadToBus(success){
+	self.success = success;
+}

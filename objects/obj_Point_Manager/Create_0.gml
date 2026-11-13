@@ -37,12 +37,7 @@ function downloadFromBus(){
 
 }
 
-//upload data to bus
-function uploadToBus(success){
-	with(obj_Data_Bus){
-		self.success = success;
-	}
-}
+
 
 function setTestInfo(){
 	goal = 100;
@@ -66,7 +61,7 @@ function finishGame(_success){
 	songState = RhythmState.Delay;
 	audio_stop_sound(songInstance);
 	with (obj_note) instance_destroy();
-	uploadToBus(_success);
+	obj_Data_Bus.rhythmUploadToBus(_success);
 }
 
 function addPoints(){
