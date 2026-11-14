@@ -1,31 +1,31 @@
 //This script will contain global information for each fish and its attributes
 
 global.testFish = {
-	name: "Test Songs",
+	name: "fish1",
 	
-	songs: [ global.testSong ],
+	songs: [ global.testSong, global.song1 ],
 	
 	difficulty: Difficulty.Hard
 }
 
 global.fish1 = {
-	name: "Creative Name",
+	name: "fish1",
 	
-	songs: [ ],
+	songs: [ global.testSong, global.song1 ],
 	
 	difficulty: Difficulty.Hard
 }
 
 global.fish2 = {
-	name: "Another Name",
+	name: "fish2",
 	
-	songs: [ ],
+	songs: [ global.song1 ],
 	
 	difficulty: Difficulty.Hard
 }
 
 global.fish3 = {
-	name: "Another Name",
+	name: "fish3",
 	
 	songs: [ ],
 	
@@ -33,7 +33,7 @@ global.fish3 = {
 }
 
 global.fish4 = {
-	name: "Another Name",
+	name: "fish4",
 	
 	songs: [ ],
 	
@@ -41,7 +41,7 @@ global.fish4 = {
 }
 
 global.fish5 = {
-	name: "Another Name",
+	name: "fish5",
 	
 	songs: [ ],
 	
@@ -49,7 +49,7 @@ global.fish5 = {
 }
 
 global.fish6 = {
-	name: "Another Name",
+	name: "fish6",
 	
 	songs: [ ],
 	
@@ -57,7 +57,7 @@ global.fish6 = {
 }
 
 global.fish7 = {
-	name: "Another Name",
+	name: "fish7",
 	
 	songs: [ ],
 	
@@ -65,7 +65,7 @@ global.fish7 = {
 }
 
 global.fish8 = {
-	name: "Another Name",
+	name: "fish8",
 	
 	songs: [ ],
 	
@@ -73,7 +73,7 @@ global.fish8 = {
 }
 
 global.fish9 = {
-	name: "Another Name",
+	name: "fish9",
 	
 	songs: [ ],
 	
@@ -81,7 +81,7 @@ global.fish9 = {
 }
 
 global.fish10 = {
-	name: "Another Name",
+	name: "fish10",
 	
 	songs: [ ],
 	

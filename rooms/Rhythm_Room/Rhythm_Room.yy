@@ -1,16 +1,16 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Rythm_Room",
+  "%Name":"Rhythm_Room",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_41EDBD54","path":"rooms/Rythm_Room/Rythm_Room.yy",},
-    {"name":"inst_52441CDB","path":"rooms/Rythm_Room/Rythm_Room.yy",},
-    {"name":"inst_1297BAB2","path":"rooms/Rythm_Room/Rythm_Room.yy",},
-    {"name":"inst_3779260D","path":"rooms/Rythm_Room/Rythm_Room.yy",},
-    {"name":"inst_4C9A898F","path":"rooms/Rythm_Room/Rythm_Room.yy",},
+    {"name":"inst_41EDBD54","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},
+    {"name":"inst_52441CDB","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},
+    {"name":"inst_1297BAB2","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},
+    {"name":"inst_3779260D","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},
+    {"name":"inst_4C9A898F","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -24,7 +24,7 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Rythm_Room",
+  "name":"Rhythm_Room",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
