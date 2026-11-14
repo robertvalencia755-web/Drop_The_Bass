@@ -1,4 +1,4 @@
-enum PlayerState {Explore, Fishing, Rythm, Locked}
+enum PlayerState {Explore, Fishing, Rhythm, RhythmComplete, Locked}
 
 function caughtFish(fish){
 	currentFish = fish;
@@ -9,12 +9,14 @@ function changeState(state){
 }
 
 function addInventory(fish, num){
-	inventory.fish += num;
+	var key = fish.name;
+	inventory[$ key] += num;
 }
 
 function removeInventory(fish, num){
-	inventory.fish -= num;
-	return inventory.fish;
+	var key = fish.name;
+	inventory[$ key] -= num;
+	return inventory[$ key];
 }
 
 
@@ -37,7 +39,7 @@ lastState = playerState;
 
 //Equipment
 equipment = {
-	currentRod: global.fishingRod1,
+	currentRod: global.testRod,
 	currentBait: global.fishingBait1,
 }
 
@@ -53,3 +55,6 @@ inventory = {
 	fish9: 0,
 	fish10: 0,
 }
+
+//Update all data
+updateFishRodData(equipment.currentRod);

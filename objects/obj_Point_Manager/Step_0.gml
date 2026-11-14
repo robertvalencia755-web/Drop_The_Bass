@@ -26,12 +26,16 @@ switch (songState) {
         updateSpawning();
 
         // Check completion (goal reached or song completed)
+		var _failure = (points < 0);
         var _success = (points >= goal);
         var _songFinished = (songTime >= song.duration && beatmapIndex >= array_length(beatMap));
 
         if (_success || _songFinished) {
             finishGame(_success);
-        }
+        } else if (_failure){
+			finishGame(!_failure);
+		}
+			
         break;
 
     case RhythmState.Delay:

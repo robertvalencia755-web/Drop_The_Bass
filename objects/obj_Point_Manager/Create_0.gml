@@ -1,14 +1,14 @@
 enum RhythmState { PreStart, Playing, Delay, Fading, Completed };
 points = 0;
 beatmapIndex = 0;
-goal = pointer_null;
-multiplier = pointer_null;
-song = pointer_null;
-beatMap = pointer_null;
-noteSpeed = pointer_null;
+goal = undefined;
+multiplier = undefined;
+song = undefined;
+beatMap = undefined;
+noteSpeed = undefined;
 
-//downloadFromBus();
-setTestInfo();
+downloadFromBus();
+//setTestInfo();
 
 //The amount of time in seconds from the spawning circle to the player paddle, this provides travel compensation to keep things on beat
 // [(Diameter1 - Diameter2) / (2 * speed)] / game_fps
@@ -65,11 +65,16 @@ function finishGame(_success){
 }
 
 function addPoints(){
-	points += 10 * multiplier;
+	points += 5;
 }
 
 function subPoints(){
-	points -= 10 * multiplier;
+	var check = points - 5;
+	if (check < 0){
+		points = -1;
+	} else {
+		points -= 5;
+	}
 }
 
 function milli(seconds){
