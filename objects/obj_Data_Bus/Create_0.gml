@@ -39,9 +39,12 @@ function rhythmUploadToBus(success){
 //PAUSE FUNCTIONS
 function pause(){
 	
-	instance_create_layer(obj_player.x , obj_player.y, "Instances", obj_quit_button);
-	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_inventory);
-	
+	if(instance_exists(obj_player)){
+		instance_create_layer(obj_player.x , obj_player.y, "Instances", obj_quit_button);
+		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_inventory);
+	} else {
+		instance_create_layer(room_width/2, room_height/2, "Instances", obj_quit_button);
+	}
 	instance_deactivate_all(true);
 	audio_pause_all();
 	

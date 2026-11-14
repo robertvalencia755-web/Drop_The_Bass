@@ -1,4 +1,4 @@
-draw_text(20, 20, "Points: " + string(points) + "/" + string(goal));
+draw_text(50, 20, "Points: " + string(points) + "/" + string(goal));
 //draw_text(20, 40, songTime);
 //draw_text(20, 60, travelTime);
 

@@ -18,6 +18,6 @@ if(keyboard_check_pressed(ord("G"))){
 	equipment.currentBait = global.testingBait;
 }
 
-if(keyboard_check_pressed(ord("F"))){
+if(keyboard_check_pressed(ord("H"))){
 	equipment.currentBait = global.fishingBait1;
 }
