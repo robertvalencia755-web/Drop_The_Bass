@@ -9,5 +9,5 @@ draw_text(160, 90, "Fish8: " + string(inventory.fish8))
 draw_text(160, 110, "Fish9: " + string(inventory.fish9))
 draw_text(160, 130, "Fish10: " + string(inventory.fish10))
 
-draw_text(260, 50, "Current Fishing Rod: " + string(equipment.currentRod.name));
-draw_text(260, 70, "Current Bait: " + string(equipment.currentBait.name));
+draw_text(360, 50, "Current Fishing Rod: " + string(equipment.currentRod.name));
+draw_text(360, 70, "Current Bait: " + string(equipment.currentBait.name));
