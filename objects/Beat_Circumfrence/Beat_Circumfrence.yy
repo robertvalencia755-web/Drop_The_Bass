@@ -32,5 +32,5 @@
     "path":"sprites/Beat_Edge/Beat_Edge.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

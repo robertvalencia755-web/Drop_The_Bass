@@ -32,5 +32,5 @@
     "path":"sprites/Spawn_Edge/Spawn_Edge.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

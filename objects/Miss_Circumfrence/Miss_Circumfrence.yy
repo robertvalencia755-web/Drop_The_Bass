@@ -32,5 +32,5 @@
     "path":"sprites/Miss_Edge/Miss_Edge.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
