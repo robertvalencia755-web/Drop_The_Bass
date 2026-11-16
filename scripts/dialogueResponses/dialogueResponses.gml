@@ -9,6 +9,8 @@ function dialogueResponses(){
 		case 3: newTextBox("This is the end"); break
 		case 4: newTextBox("Hi chum, you are very cute, I like the way that you look."); break
 		case 5: newTextBox("Stupid name for a stupid little boy like yourself."); break
+		case 6: newTextBox("I dont know bitch."); break
+		case 7: newTextBox("You are stupid"); break
 		default: break
 	}
 }
