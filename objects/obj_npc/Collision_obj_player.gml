@@ -5,7 +5,8 @@ if(keyboard_check_pressed(ord("E"))){
 		if(playerState != PlayerState.Locked){
 			//then goes through the text array and calls the newTextBox funtion which puts all the texts in a queue
 			with(other){
-				newTextBox(text,textResponses)
+				if(array_length(text) > 1) newTextBox(text[0],text[1])
+				else newTextBox(text[0])
 			}
 		}
 	}
