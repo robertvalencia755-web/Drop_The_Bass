@@ -1,4 +1,4 @@
-enum PlayerState {Explore, Fishing, Rhythm, RhythmComplete, Locked}
+enum PlayerState {Explore, Fishing, Casting, Rhythm, RhythmComplete, Locked}
 
 function caughtFish(fish){
 	currentFish = fish;
@@ -21,6 +21,7 @@ function removeInventory(fish, num){
 
 
 
+
 //Movement variables
 xSpeed = 0;
 ySpeed = 0;
@@ -30,6 +31,7 @@ direction = 270;
 //Fishing rod tip offset (adjust when rod sprite/positions are ready)
 rodOffsetX = 0;
 rodOffsetY = 0;
+fishingKey = ord("F");
 
 
 //State variables
