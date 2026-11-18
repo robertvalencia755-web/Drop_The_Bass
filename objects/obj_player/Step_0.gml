@@ -7,13 +7,13 @@ switch (playerState){
 		EightMovement(spr_playerRight, spr_playerUp, spr_playerLeft, spr_playerDown);
 		
 		//check for fishing key
-		checkFishing(ord("F"));
+		checkFishing(fishingKey);
 		
 		break;
 		
 	case PlayerState.Fishing:
 		//check for fishing key
-		checkFishing(ord("F"));
+		checkFishing(fishingKey);
 	
 		//Do the fishing stuff
 		if (currentFish != undefined){
@@ -34,6 +34,11 @@ switch (playerState){
 			instance_create_depth(x, y, -9999, obj_transition);
 		}
 		
+		break;
+		
+	case PlayerState.Casting:
+		checkFishing(fishingKey);
+	
 		break;
 	
 	case PlayerState.Rhythm:
