@@ -1,9 +1,9 @@
 if (room == Shop_room)
 {
-	room_goto(0);
+	room_goto(Main_World);
 }
 
 if (room == Main_World)
 {
-	room_goto(2);	
+	room_goto(Shop_room);	
 }

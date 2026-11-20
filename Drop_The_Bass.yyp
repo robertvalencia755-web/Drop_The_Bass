@@ -16,6 +16,7 @@
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fishing Objects","folderPath":"folders/Objects/Fishing Objects.yy","name":"Fishing Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Dialoge Objects","folderPath":"folders/Objects/Dialoge Objects.yy","name":"Dialoge Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu Objects","folderPath":"folders/Objects/Menu Objects.yy","name":"Menu Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPC","folderPath":"folders/Objects/NPC.yy","name":"NPC","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player objects","folderPath":"folders/Objects/player objects.yy","name":"player objects","resourceType":"GMFolder","resourceVersion":"2.0",},

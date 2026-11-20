@@ -9,8 +9,8 @@
   "name":"obj_game",
   "overriddenProperties":[],
   "parent":{
-    "name":"World Objects",
-    "path":"folders/Objects/World Objects.yy",
+    "name":"Dialoge Objects",
+    "path":"folders/Objects/Dialoge Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
