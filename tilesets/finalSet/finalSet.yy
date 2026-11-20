@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Sprite45",
-    "path":"sprites/Sprite45/Sprite45.yy",
+    "name":"finalTileSet",
+    "path":"sprites/finalTileSet/finalTileSet.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
