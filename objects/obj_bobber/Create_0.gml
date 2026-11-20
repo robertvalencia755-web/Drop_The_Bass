@@ -18,7 +18,7 @@ function increment(){
 
 function updateForceGUI(){
 	var percent = ((force - 2) / 5) * 100;
-	draw_healthbar(550, 800, 1200, 900, percent, c_dkgrey, c_yellow, c_lime, 0, true, true);
+	draw_healthbar(obj_player.x - 500, obj_player.y + 200, obj_player.x + 500, obj_player.y + 400, percent, c_dkgrey, c_yellow, c_lime, 0, true, true);
 }
 
 

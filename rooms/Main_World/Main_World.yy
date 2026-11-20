@@ -113,6 +113,7 @@
     {"name":"inst_35EC491A","path":"rooms/Main_World/Main_World.yy",},
     {"name":"inst_27765EF6","path":"rooms/Main_World/Main_World.yy",},
     {"name":"inst_4D5E6728","path":"rooms/Main_World/Main_World.yy",},
+    {"name":"inst_36AD90AA","path":"rooms/Main_World/Main_World.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -232,6 +233,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"propertyId":{"name":"Fish_Types","path":"objects/obj_water/obj_water.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.fish2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.203125,"scaleY":2.25,"x":1254.5,"y":1088.0,},
         {"$GMRInstance":"v4","%Name":"inst_2DB58B27","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DB58B27","objectId":{"name":"obj_buffNut","path":"objects/obj_buffNut/obj_buffNut.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":706.0,"y":934.0,},
+        {"$GMRInstance":"v4","%Name":"inst_36AD90AA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36AD90AA","objectId":{"name":"obj_enterShop","path":"objects/obj_enterShop/obj_enterShop.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.5,"x":1049.0,"y":794.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_690783F5","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_690783F5","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_sunburnt","path":"sprites/spr_sunburnt/spr_sunburnt.yy",},"x":1810.0,"y":932.0,},

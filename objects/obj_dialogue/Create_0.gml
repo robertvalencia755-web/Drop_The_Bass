@@ -1,16 +1,27 @@
-//640 = resolution width
-//360 = resolution height
-x1 = 640/2
-x2 = 640/2
-y1 = 360-100
-y2 = 340
+// Dynamic GUI resolution sizing based on GUI dimensions
+var _gui_w = display_get_gui_width();
+var _gui_h = display_get_gui_height();
 
-x1Target = 20
-x2Target = 620
+var _scale_x = _gui_w / 640;
+var _scale_y = _gui_h / 360;
 
-lerpProgress = 0
-textProgress = 0
+// Proportional padding and box height
+var _margin_x = 20 * _scale_x;
+var _margin_bottom = 20 * _scale_y;
+var _box_height = 80 * _scale_y;
 
-textSpeed = 0.25
+x1Target = _margin_x;
+x2Target = _gui_w - _margin_x;
+y1 = _gui_h - _box_height - _margin_bottom;
+y2 = _gui_h - _margin_bottom;
+
+// Start animation from horizontal center
+x1 = _gui_w / 2;
+x2 = _gui_w / 2;
+
+lerpProgress = 0;
+textProgress = 0;
+
+textSpeed = 0.25;
 
 responseSelected = 0;
