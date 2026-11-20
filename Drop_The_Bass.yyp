@@ -101,7 +101,6 @@
     {"id":{"name":"spr_border","path":"sprites/spr_border/spr_border.yy",},},
     {"id":{"name":"spr_chub","path":"sprites/spr_chub/spr_chub.yy",},},
     {"id":{"name":"spr_dialogue","path":"sprites/spr_dialogue/spr_dialogue.yy",},},
-    {"id":{"name":"spr_fence","path":"sprites/spr_fence/spr_fence.yy",},},
     {"id":{"name":"spr_fishrods","path":"sprites/spr_fishrods/spr_fishrods.yy",},},
     {"id":{"name":"spr_goldfish","path":"sprites/spr_goldfish/spr_goldfish.yy",},},
     {"id":{"name":"spr_guppy","path":"sprites/spr_guppy/spr_guppy.yy",},},
