@@ -39,6 +39,18 @@ function spawnFishItems(){
 	}
 }
 
+function spawnRodItems(){
+	
+}
+
+function spawnBaitItems(){
+	
+}
+
+function spawnCurrentItems(){
+	
+}
+
 spawnFishItems();
 
 
