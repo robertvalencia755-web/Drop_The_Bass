@@ -9,12 +9,12 @@ function changeState(state){
 }
 
 function addInventory(fish, num){
-	var key = fish.name;
+	var key = fish.key;
 	inventory[$ key] += num;
 }
 
 function removeInventory(fish, num){
-	var key = fish.name;
+	var key = fish.key;
 	inventory[$ key] -= num;
 	return inventory[$ key];
 }
@@ -45,17 +45,20 @@ equipment = {
 	currentBait: global.fishingBait1,
 }
 
+
 inventory = {
-	fish1: 0,
-	fish2: 0,
-	fish3: 0,
-	fish4: 0,
-	fish5: 0,
-	fish6: 0,
-	fish7: 0,
-	fish8: 0,
-	fish9: 0,
-	fish10: 0,
+	anchovy: 0,
+	angelfish: 0,
+	catfish: 0,
+	blobfish: 0,
+	goldfish: 0,
+	guppy: 0,
+	mackeral: 0,
+	pufferfish: 0,
+	seahorse: 0,
+	snapper: 0,
+	swordfish: 0,
+	whale: 0
 }
 
 //Update all data

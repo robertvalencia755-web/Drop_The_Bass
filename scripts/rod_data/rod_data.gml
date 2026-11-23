@@ -3,20 +3,20 @@
 
 global.testRod = {
 	name: "Testing Rod",
-	fishAllowed: [global.testFish, global.fish1, global.fish2],
-	fishDifficulty: [Difficulty.Easy, Difficulty.Easy, Difficulty.Easy]
+	fishAllowed: [global.anchovy, global.angelfish],
+	fishDifficulty: [Difficulty.Easy, Difficulty.Easy]
 }
 
 global.fishingRod1 = {
 	name: "Medium Rod",
-	fishAllowed: [global.testFish, global.fish1],
-	fishDifficulty: [Difficulty.Medium, Difficulty.Medium]
+	fishAllowed: [global.anchovy],
+	fishDifficulty: [Difficulty.Medium]
 }
 
 global.fishingRod2 = {
 	name: "Hard Rod",
-	fishAllowed: [ global.testFish, global.fish1 ],
-	fishDifficulty: [ Difficulty.Hard, Difficulty.Hard]
+	fishAllowed: [global.anchovy ],
+	fishDifficulty: [Difficulty.Hard]
 }
 
 global.fishingRod3 = {

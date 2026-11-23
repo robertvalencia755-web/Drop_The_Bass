@@ -9,8 +9,8 @@
   "name":"obj_Data_Bus",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rhythm Game Objects",
-    "path":"folders/Objects/Rhythm Game Objects.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

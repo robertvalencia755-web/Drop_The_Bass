@@ -30,7 +30,7 @@ switch (playerState){
 			//instance_activate_object(obj_Data_Bus);
 			
 			//Activate the transition animation and upload necessary data to DataBus
-			obj_Data_Bus.playerUploadToBus(song, mapDiff, equipment.currentBait.catchMultiplier, goal);
+			obj_Data_Bus.playerUploadToBus(song, mapDiff, equipment.currentBait.catchMultiplier, goal, inventory);
 			instance_create_depth(x, y, -9999, obj_transition);
 		}
 		

@@ -9,6 +9,10 @@ multiplier = 1;
 song = undefined;
 mapDiff = Difficulty.Hard;
 
+//Player Attributes
+inventory = undefined;
+equipment = undefined
+
 
 //Take back to main
 success = undefined;
@@ -18,16 +22,26 @@ function reset(){
 	multiplier = 1;
 	song = undefined;
 	mapDiff = Difficulty.Hard;
+	inventory = undefined;
+	equipment = undefined;
+	
 
 	success = undefined;
 }
 
-function playerUploadToBus(song, mapDiff, multiplier, goal){
+function playerUploadToBus(song, mapDiff, multiplier, goal, inventory){
 	self.song = song;
 	self.mapDiff = mapDiff
 	self.goal = goal;
 	self.multiplier = multiplier;
-	
+	self.inventory = inventory;
+}
+
+function inventoryUploadToBus(){
+	if (instance_exists(obj_player)) {
+		inventory = obj_player.inventory;
+		equipment = obj_player.equipment;
+	}
 }
 
 function rhythmUploadToBus(success){
@@ -38,26 +52,21 @@ function rhythmUploadToBus(success){
 
 //PAUSE FUNCTIONS
 function pause(){
-	
-	if(instance_exists(obj_player)){
-		instance_create_layer(obj_player.x , obj_player.y, "Instances", obj_quit_button);
-		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_inventory);
-	} else {
-		instance_create_layer(room_width/2, room_height/2, "Instances", obj_quit_button);
+	if (equipment == undefined && inventory == undefined){
+		inventoryUploadToBus();
 	}
+	
 	instance_deactivate_all(true);
 	audio_pause_all();
 	
-	instance_activate_object(obj_inventory);
-	instance_activate_object(obj_quit_button);
-	
+	instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_inventory);
 	
 }
 
 function unpause(){
 	instance_activate_all();
 	audio_resume_all();
+	reset();
 	
-	instance_destroy(obj_quit_button);
 	instance_destroy(obj_inventory);
 }
