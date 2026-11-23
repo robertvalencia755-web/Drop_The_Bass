@@ -1,5 +1,5 @@
 display_set_gui_size(1920, 1080);
-enum Item {Anchovy, Angelfish, Blobfish, Catfish, Goldfish, Guppy, Mackeral, Pufferfish, Seahorse, Snapper, Swordfish, Whale, Carry}
+enum Item {Anchovy, Angelfish, Blobfish, Catfish, Goldfish, Guppy, Mackeral, Pufferfish, Seahorse, Snapper, Swordfish, Whale, /* FISHING RODS */ TwigRod, CoralCaster, TheHooker, TroutWhisperer, BigBertha, HolyRod, /* FISHING BAIT*/ LeafBait, NemoBait, Ribbait, WormBait, MicroplasticBait, Carry}
 copy = false;
 num = undefined;
 offset = 81;

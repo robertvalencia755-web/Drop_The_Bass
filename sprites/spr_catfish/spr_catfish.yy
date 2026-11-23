@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Fish Sprites",
-    "path":"folders/Sprites/Fish Sprites.yy",
+    "path":"folders/Sprites/Item Spriites/Fish Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

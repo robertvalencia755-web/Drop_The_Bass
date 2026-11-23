@@ -35,7 +35,7 @@
   "origin":0,
   "parent":{
     "name":"fishingrods",
-    "path":"folders/Sprites/fishingrods.yy",
+    "path":"folders/Sprites/Item Spriites/fishingrods.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

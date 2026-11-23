@@ -43,6 +43,8 @@ lastState = playerState;
 equipment = {
 	currentRod: global.testRod,
 	currentBait: global.fishingBait1,
+	ownedRods: [],
+	owedBaits: []
 }
 
 
