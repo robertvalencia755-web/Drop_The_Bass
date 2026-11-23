@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_slot",
+    "path":"sprites/spr_slot/spr_slot.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
