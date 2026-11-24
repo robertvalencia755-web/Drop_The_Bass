@@ -1,0 +1,8 @@
+var _mx = device_mouse_x_to_gui(0);
+var _my = device_mouse_y_to_gui(0);
+
+if (mouse_check_button_pressed(mb_left) && position_meeting(_mx, _my, id)) {
+	with (obj_Data_Bus){
+		event_perform(ev_keypress, vk_escape);
+	}
+}

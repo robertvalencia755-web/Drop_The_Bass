@@ -6,6 +6,7 @@ function downloadFromBus(){
 		other.beatMap = song.maps[mapDiff];
 		other.mapDiff = mapDiff;
 		other.noteSpeed = song.noteSpeed[mapDiff];
+		other.autoStop = autoStop;
 	}
 
 }
@@ -99,10 +100,10 @@ song = undefined;
 beatMap = undefined;
 mapDiff = undefined;
 noteSpeed = undefined;
+autoStop = undefined;
 
 downloadFromBus();
 calculateGoal();
-//setTestInfo();
 
 //The amount of time in seconds from the spawning circle to the player paddle, this provides travel compensation to keep things on beat
 // [(Diameter1 - Diameter2) / (2 * speed)] / game_fps

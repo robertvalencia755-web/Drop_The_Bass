@@ -172,6 +172,25 @@ function spawnCurrentItems(){
 }
 
 
+// (1654, 983) AUTOSTOPSWITCH
+// (1803, 983) QUITBUTTON
+function spawnButtons(){
+	var coords = [
+		[1654, 983],
+		[1803, 983],
+		[1803, 97]
+	];
+	
+	var _switchInst = instance_create_layer(coords[0][0], coords[0][1], layer, obj_autoStopSwitch, {depth: depth - 10});
+	var _quitInst = instance_create_layer(coords[1][0], coords[1][1], layer, obj_quit_button, {depth: depth - 10});
+	var _closeInst = instance_create_layer(coords[2][0], coords[2][1], layer, obj_closeButton, {depth: depth - 10})
+	
+	array_push(spawnedItems, _switchInst);
+	array_push(spawnedItems, _quitInst);
+	array_push(spawnedItems, _closeInst);
+}
+
+
 function equipRod(newRodData){
 	currentRod = newRodData;
 	equipment.currentRod = newRodData;
@@ -201,6 +220,7 @@ spawnFishItems();
 spawnRodItems();
 spawnBaitItems();
 spawnCurrentItems();
+spawnButtons();
 
 
 

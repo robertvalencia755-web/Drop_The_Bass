@@ -1,0 +1,1 @@
+draw_sprite(RhythmPauseLayout, 0, 960, 540);
