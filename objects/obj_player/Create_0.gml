@@ -19,7 +19,23 @@ function removeInventory(fish, num){
 	return inventory[$ key];
 }
 
+function changeCurrentRod(rod){
+	equipment.currentRod = rod;
+	updateFishRodData(equipment.currentRod);
+}
 
+function changeCurrentBait(bait){
+	equipment.currentBait = bait;
+}
+
+function addToEquipment(type,item){
+	if (type == "ROD"){
+		array_push(equipment.ownedRods, item);
+	} else if (type == "BAIT"){
+		array_push(equipment.ownedBaits, item);
+	}
+	
+}
 
 
 //Movement variables
@@ -41,10 +57,10 @@ lastState = playerState;
 
 //Equipment
 equipment = {
-	currentRod: global.testRod,
+	currentRod: global.fishingRod1,
 	currentBait: global.fishingBait1,
-	ownedRods: [],
-	owedBaits: []
+	ownedRods: [global.fishingRod1, global.fishingRod2],
+	ownedBaits: [global.fishingBait1, global.fishingBait2]
 }
 
 
