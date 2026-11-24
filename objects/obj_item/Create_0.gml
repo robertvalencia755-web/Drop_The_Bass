@@ -1,14 +1,29 @@
 display_set_gui_size(1920, 1080);
-enum Item {Anchovy, Angelfish, Blobfish, Catfish, Goldfish, Guppy, Mackeral, Pufferfish, Seahorse, Snapper, Swordfish, Whale, /* FISHING RODS */ TwigRod, CoralCaster, TheHooker, TroutWhisperer, BigBertha, HolyRod, /* FISHING BAIT*/ LeafBait, NemoBait, Ribbait, WormBait, MicroplasticBait, Carry}
+
+function updateSprite(){
+	itemDefine();
+	
+	if (isEquipped && sprite_index != -1 && sprite_get_width(sprite_index) > 0) {
+		image_xscale = 192 / sprite_get_width(sprite_index);
+		image_yscale = 192 / sprite_get_height(sprite_index);
+	}
+}
+
+
+enum Item {
+	/*FISH*/ Anchovy, Angelfish, Blobfish, Catfish, Goldfish, Guppy, Mackeral, Pufferfish, Seahorse, Snapper, Swordfish, Whale,
+	/* FISHING RODS */ TwigRod, CoralCaster, TheHooker, TroutWhisperer, BigBertha, HolyRod, 
+	/* FISHING BAIT*/ LeafBait, NemoBait, Ribbait, WormBait, MicroplasticBait, MasterBait,
+	Carry
+	}
+
 copy = false;
 num = undefined;
 offset = 81;
 
-if (item != Item.Carry){
-	name = global.fishNames[item];
-}
-
-switch(item) {
+function itemDefine(){
+	switch(item) {
+	//FISH ======================================
 	case Item.Anchovy:
 		sprite_index = spr_anchovy;
 		num = obj_inventory.inventory.anchovy;
@@ -68,4 +83,64 @@ switch(item) {
 		sprite_index = spr_whale;
 		num = obj_inventory.inventory.whale;
 		break;
+	
+	//FISHING RODS ======================================
+	
+	case Item.TwigRod:
+		sprite_index = spr_twigRod;
+		break;
+		
+	case Item.CoralCaster:
+		sprite_index = spr_coralCaster;
+		break;
+	
+	case Item.TheHooker:
+		sprite_index = spr_theHooker;
+		break;
+	
+	case Item.TroutWhisperer:
+		sprite_index = spr_troutWhisperer;
+		break;
+	
+	case Item.BigBertha:
+		sprite_index = spr_bigBertha;
+		break;
+	
+	case Item.HolyRod:
+		sprite_index = spr_holyRod;
+		break;
+	
+	//FISHING BAIT ======================================
+	
+	case Item.LeafBait:
+		sprite_index = spr_leafBait;
+		break;
+	
+	case Item.NemoBait:
+		sprite_index = spr_nemoBait;
+		break;
+	
+	case Item.Ribbait:
+		sprite_index = spr_ribbait;
+		break;
+	
+	case Item.WormBait:
+		sprite_index = spr_wormBait;
+		break;
+	
+	case Item.MicroplasticBait:
+		sprite_index = spr_microplasticBait;
+		break;
+	
+	case Item.MasterBait:
+		sprite_index = spr_masterBait;
+		break;
+		
+	default:
+		sprite_index = -1;
 }
+}
+
+
+
+updateSprite();

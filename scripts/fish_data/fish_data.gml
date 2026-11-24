@@ -1,10 +1,7 @@
-//This script will contain global information for each fish and its attributes
-global.itemNames = [Item.Anchovy, Item.Angelfish, Item.Blobfish, Item.Catfish, Item.Goldfish, Item.Guppy, Item.Mackeral, Item.Pufferfish, Item.Seahorse, Item.Snapper, Item.Swordfish, Item.Whale];
-global.fishNames = ["Anchovy", "Angelfish", "Blobfish", "Catfish", "Goldfish", "Guppy", "Mackeral", "Pufferfish", "Seahorse", "Snapper", "Swordfish", "Whale"];
-
 global.anchovy = {
 	name: "Anchovy",
 	key: "anchovy",
+	ref: Item.Anchovy,
 	
 	songs: [ global.testSong, global.song1 ],
 	
@@ -14,6 +11,7 @@ global.anchovy = {
 global.angelfish = {
 	name: "Angelfish",
 	key: "angelfish",
+	ref: Item.Angelfish,
 	
 	songs: [ global.song1 ],
 	
@@ -23,6 +21,7 @@ global.angelfish = {
 global.blobfish = {
 	name: "Blobfish",
 	key: "blobfish",
+	ref: Item.Blobfish,
 	
 	songs: [ ],
 	
@@ -32,6 +31,7 @@ global.blobfish = {
 global.catfish = {
 	name: "Catfish",
 	key: "catfish",
+	ref: Item.Catfish,
 	
 	songs: [ ],
 	
@@ -41,6 +41,7 @@ global.catfish = {
 global.goldfish = {
 	name: "Goldfish",
 	key: "goldfish",
+	ref: Item.Goldfish,
 	
 	songs: [ ],
 	
@@ -50,6 +51,7 @@ global.goldfish = {
 global.guppy = {
 	name: "Guppy",
 	key: "guppy",
+	ref: Item.Guppy,
 	
 	songs: [ ],
 	
@@ -59,6 +61,7 @@ global.guppy = {
 global.mackeral = {
 	name: "Mackeral",
 	key: "mackeral",
+	ref: Item.Mackeral,
 	
 	songs: [ ],
 	
@@ -68,6 +71,7 @@ global.mackeral = {
 global.pufferfish = {
 	name: "Pufferfish",
 	key: "pufferfish",
+	ref: Item.Pufferfish,
 	
 	songs: [ ],
 	
@@ -77,6 +81,7 @@ global.pufferfish = {
 global.seahorse = {
 	name: "Seahorse",
 	key: "seahorse",
+	ref: Item.Seahorse,
 	
 	songs: [ ],
 	
@@ -86,6 +91,7 @@ global.seahorse = {
 global.snapper = {
 	name: "Snapper",
 	key: "snapper",
+	ref: Item.Snapper,
 	
 	songs: [ ],
 	
@@ -95,6 +101,7 @@ global.snapper = {
 global.swordfish = {
 	name: "Swordfish",
 	key: "swordfish",
+	ref: Item.Swordfish,
 	
 	songs: [ ],
 	
@@ -104,8 +111,14 @@ global.swordfish = {
 global.whale = {
 	name: "Whale",
 	key: "whale",
+	ref: Item.Whale,
 	
 	songs: [ ],
 	
 	difficulty: Difficulty.Hard
 }
+
+
+//This script will contain global information for each fish and its attributes
+global.fishRefs = [global.anchovy, global.angelfish, global.blobfish, global.catfish, global.goldfish, global.guppy, global.mackeral, global.pufferfish, global.seahorse, global.snapper, global.swordfish, global.whale];
+global.fishNames = ["Anchovy", "Angelfish", "Blobfish", "Catfish", "Goldfish", "Guppy", "Mackeral", "Pufferfish", "Seahorse", "Snapper", "Swordfish", "Whale"];
