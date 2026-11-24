@@ -4,10 +4,9 @@ paused = false;
 enum Difficulty {Easy, Medium, Hard};
 
 //Transporting to Rhythm stuff
-goal = undefined;
 multiplier = 1;
 song = undefined;
-mapDiff = Difficulty.Hard;
+mapDiff = undefined;
 
 //Player Attributes
 inventory = undefined;
@@ -18,10 +17,9 @@ equipment = undefined
 success = undefined;
 
 function reset(){
-	goal = undefined;
 	multiplier = 1;
 	song = undefined;
-	mapDiff = Difficulty.Hard;
+	mapDiff = undefined;
 	inventory = undefined;
 	equipment = undefined;
 	
@@ -29,10 +27,9 @@ function reset(){
 	success = undefined;
 }
 
-function playerUploadToBus(song, mapDiff, multiplier, goal, inventory){
+function playerUploadToBus(song, mapDiff, multiplier, inventory){
 	self.song = song;
 	self.mapDiff = mapDiff
-	self.goal = goal;
 	self.multiplier = multiplier;
 	self.inventory = inventory;
 }

@@ -1,42 +1,28 @@
-enum RhythmState { PreStart, Playing, Delay, Fading, Completed };
-points = 0;
-beatmapIndex = 0;
-goal = undefined;
-multiplier = undefined;
-song = undefined;
-beatMap = undefined;
-noteSpeed = undefined;
-
-downloadFromBus();
-//setTestInfo();
-
-//The amount of time in seconds from the spawning circle to the player paddle, this provides travel compensation to keep things on beat
-// [(Diameter1 - Diameter2) / (2 * speed)] / game_fps
-travelTime = ((Spawn_Circumfrence.sprite_width - Beat_Circumfrence.sprite_width) / (2 * noteSpeed)) / game_get_speed(gamespeed_fps);
-songState = RhythmState.PreStart;
-songInstance = -1;
-songTime = -travelTime;
-
-delayTimer = 3.0;
-fadeAlpha = 0.0;
-fadeDuration = 1.0;
-
-
-
-
-
 //Get data from bus
 function downloadFromBus(){
 	with(obj_Data_Bus){
-		other.goal = goal;
 		other.multiplier = multiplier;
 		other.song = song;
 		other.beatMap = song.maps[mapDiff];
+		other.mapDiff = mapDiff;
 		other.noteSpeed = song.noteSpeed[mapDiff];
 	}
 
 }
 
+function calculateGoal(){
+	var totalPoints = array_length(beatMap) * 5;
+	switch (mapDiff) {
+		case Difficulty.Easy:
+			goal = floor(totalPoints * 0.95);
+		
+		case Difficulty.Medium:
+			goal = floor(totalPoints * 0.75);
+		
+		case Difficulty.Hard:
+			goal = floor(totalPoints * 0.50);
+	}
+}
 
 
 function setTestInfo(){
@@ -100,3 +86,31 @@ function calcSpawn(){
 	
 	return [_x, _y];
 }
+
+
+
+enum RhythmState { PreStart, Playing, Delay, Fading, Completed };
+points = 0;
+beatmapIndex = 0;
+
+goal = undefined;
+multiplier = undefined;
+song = undefined;
+beatMap = undefined;
+mapDiff = undefined;
+noteSpeed = undefined;
+
+downloadFromBus();
+calculateGoal();
+//setTestInfo();
+
+//The amount of time in seconds from the spawning circle to the player paddle, this provides travel compensation to keep things on beat
+// [(Diameter1 - Diameter2) / (2 * speed)] / game_fps
+travelTime = ((Spawn_Circumfrence.sprite_width - Beat_Circumfrence.sprite_width) / (2 * noteSpeed)) / game_get_speed(gamespeed_fps);
+songState = RhythmState.PreStart;
+songInstance = -1;
+songTime = -travelTime;
+
+delayTimer = 3.0;
+fadeAlpha = 0.0;
+fadeDuration = 1.0;

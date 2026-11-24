@@ -20,7 +20,6 @@ switch (playerState){
 			var songList = currentFish.songs;
 			var song = songList[irandom(array_length(songList)-1)];
 			var mapDiff = currentFish.difficulty;
-			var goal = 100;
 		
 			//display the catching fish sprite + the fish on the screen
 			//Allow player to choose to catch it or release, ie switch playerState to Explore or Rythm
@@ -30,7 +29,7 @@ switch (playerState){
 			//instance_activate_object(obj_Data_Bus);
 			
 			//Activate the transition animation and upload necessary data to DataBus
-			obj_Data_Bus.playerUploadToBus(song, mapDiff, equipment.currentBait.catchMultiplier, goal, inventory);
+			obj_Data_Bus.playerUploadToBus(song, mapDiff, equipment.currentBait.catchMultiplier, inventory);
 			instance_create_depth(x, y, -9999, obj_transition);
 		}
 		
