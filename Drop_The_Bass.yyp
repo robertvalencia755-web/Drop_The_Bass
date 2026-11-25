@@ -93,6 +93,7 @@
     {"id":{"name":"Paddle","path":"objects/Paddle/Paddle.yy",},},
     {"id":{"name":"Spawn_Circumfrence","path":"objects/Spawn_Circumfrence/Spawn_Circumfrence.yy",},},
     {"id":{"name":"Craft_Room","path":"rooms/Craft_Room/Craft_Room.yy",},},
+    {"id":{"name":"Main_Menu","path":"rooms/Main_Menu/Main_Menu.yy",},},
     {"id":{"name":"Main_World","path":"rooms/Main_World/Main_World.yy",},},
     {"id":{"name":"Rhythm_Room","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},},
     {"id":{"name":"Shop_room","path":"rooms/Shop_room/Shop_room.yy",},},
@@ -141,6 +142,7 @@
     {"id":{"name":"spr_microplasticBait","path":"sprites/spr_microplasticBait/spr_microplasticBait.yy",},},
     {"id":{"name":"spr_nemoBait","path":"sprites/spr_nemoBait/spr_nemoBait.yy",},},
     {"id":{"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},},
+    {"id":{"name":"spr_placeholder","path":"sprites/spr_placeholder/spr_placeholder.yy",},},
     {"id":{"name":"spr_playerDown","path":"sprites/spr_playerDown/spr_playerDown.yy",},},
     {"id":{"name":"spr_playerLeft","path":"sprites/spr_playerLeft/spr_playerLeft.yy",},},
     {"id":{"name":"spr_playerMouth","path":"sprites/spr_playerMouth/spr_playerMouth.yy",},},
@@ -190,6 +192,7 @@
     {"roomId":{"name":"Rhythm_Room","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},},
     {"roomId":{"name":"Shop_room","path":"rooms/Shop_room/Shop_room.yy",},},
     {"roomId":{"name":"Craft_Room","path":"rooms/Craft_Room/Craft_Room.yy",},},
+    {"roomId":{"name":"Main_Menu","path":"rooms/Main_Menu/Main_Menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -7,6 +7,11 @@ function updateSprite(){
 		image_xscale = 192 / sprite_get_width(sprite_index);
 		image_yscale = 192 / sprite_get_height(sprite_index);
 	}
+	
+	if (num == 0) {
+		image_blend = c_grey;
+		image_alpha = .8;
+	}
 }
 
 
