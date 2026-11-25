@@ -107,6 +107,7 @@
     {"id":{"name":"rod_data","path":"scripts/rod_data/rod_data.yy",},},
     {"id":{"name":"scr_movement","path":"scripts/scr_movement/scr_movement.yy",},},
     {"id":{"name":"stringWrap","path":"scripts/stringWrap/stringWrap.yy",},},
+    {"id":{"name":"DTB_track1","path":"sounds/DTB_track1/DTB_track1.yy",},},
     {"id":{"name":"Sound1","path":"sounds/Sound1/Sound1.yy",},},
     {"id":{"name":"Sound2","path":"sounds/Sound2/Sound2.yy",},},
     {"id":{"name":"Beat_Edge","path":"sprites/Beat_Edge/Beat_Edge.yy",},},
