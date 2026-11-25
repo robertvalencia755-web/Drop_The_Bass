@@ -55,6 +55,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":null,
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_placeholder",
+    "path":"sprites/spr_placeholder/spr_placeholder.yy",
+  },
   "visible":true,
 }
