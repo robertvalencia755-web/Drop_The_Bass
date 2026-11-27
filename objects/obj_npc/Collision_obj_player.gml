@@ -1,4 +1,6 @@
 //probably a way too complicated way to do this but
+
+
 if(keyboard_check_pressed(ord("E"))){
 	with(obj_player){
 		//checks if player isnt locked so you cant keep pressing e to make new text boxes

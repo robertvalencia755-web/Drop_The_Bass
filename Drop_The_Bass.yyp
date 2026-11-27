@@ -98,6 +98,7 @@
     {"id":{"name":"Rhythm_Room","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},},
     {"id":{"name":"Shop_room","path":"rooms/Shop_room/Shop_room.yy",},},
     {"id":{"name":"testingRoom","path":"rooms/testingRoom/testingRoom.yy",},},
+    {"id":{"name":"Tutorial_World","path":"rooms/Tutorial_World/Tutorial_World.yy",},},
     {"id":{"name":"Asong_data","path":"scripts/Asong_data/Asong_data.yy",},},
     {"id":{"name":"bait_data","path":"scripts/bait_data/bait_data.yy",},},
     {"id":{"name":"dialogueResponses","path":"scripts/dialogueResponses/dialogueResponses.yy",},},
@@ -188,6 +189,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Tutorial_World","path":"rooms/Tutorial_World/Tutorial_World.yy",},},
     {"roomId":{"name":"Main_World","path":"rooms/Main_World/Main_World.yy",},},
     {"roomId":{"name":"testingRoom","path":"rooms/testingRoom/testingRoom.yy",},},
     {"roomId":{"name":"Rhythm_Room","path":"rooms/Rhythm_Room/Rhythm_Room.yy",},},
