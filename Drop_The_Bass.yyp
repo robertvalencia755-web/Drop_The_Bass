@@ -87,6 +87,7 @@
     {"id":{"name":"obj_shopItem","path":"objects/obj_shopItem/obj_shopItem.yy",},},
     {"id":{"name":"obj_slot","path":"objects/obj_slot/obj_slot.yy",},},
     {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},},
+    {"id":{"name":"obj_tutorial","path":"objects/obj_tutorial/obj_tutorial.yy",},},
     {"id":{"name":"obj_tutWall","path":"objects/obj_tutWall/obj_tutWall.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
